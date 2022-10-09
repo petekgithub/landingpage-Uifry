@@ -2,76 +2,79 @@
 
 
 .container {
-  transition: all .2s;
-  z-index: 10;
-  @include fixed(0,0,null,0);
-  
-  .left {
-    margin-left       : 5px;
-    width             : 100%;
-    height            : 200%;
-  };
-  .info {
-    position      : relative;
-    
-  }
-  h1 {
-    font-size     : 3.0rem;
-    margin-top    : 2rem;
-    font-weight   : bold;
-  }
-  .p {
-    font-size            : 25px;
-    opacity              : 1.6;
-  }
-  .light {
-    
-    opacity       : 0.8;
- 
-  }
 
-  .media {
-    display       : flex;
-    flex-direction: row;  
-  }
-  .getStartedButton {
-    background-color     : black;
-    padding              : 15px 10px;
-    color                : white;
-    border-radius        : 5px;
-    flex-direction       : row;
-    cursor               : pointer;
-  }
-  .watch {
-    display              : flex;
-    margin-right         : 5px;
-    background           : none;
-    border               : 1ps solid #181818;
-    cursor               : pointer;
-    margin-left: 20px;
+  .content {
+    @include flex(null, center);
+    @include content();
+    @include responsive(flex-direction, null, null, column-reverse);
 
-  .video {
-    padding              : 5px 10px;
-    background-color     : #fff;
-    display              : flex;
-  }
-  .button {
-    background           : none;
-    background-color     : #fff;
-    border               : none;
-    color                : 181818;
-    font-size            : 20px;
-    white-space          : nowrap;
-  }
-};
+    .left {
+      @include responsive(width, 50%, 50%, 100%);
 
-.right {
-  display           : flex;
-  flex-direction: column;
-  margin-right: -80px;
-  height             : 400%;
+      .info {
 
-}
+        h1 {
+          margin-left: auto;
+          //font-weight: bold;
+          font-family: 'Clash Display';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 64px;
+          line-height: 64px;
+          @include responsive(text-align, null, null, center);
+          @include responsive(margin-bottom, 20px, 10px, 5px);
+          @include responsive(padding-top, null, null, 20px);
+          @include responsive(max-width, 480px, 368px, 100%);
+          @include responsive(font-size, 28px, 22px, 16px);
+        }
+
+        p {
+          margin-left: auto;
+          font-size            : 25px;
+          opacity              : 1.6;
+          @include responsive(padding-bottom, null, null, 20px);
+          @include responsive(text-align, null, null, center);
+          @include responsive(max-width, 480px, 368px, 100%);
+          @include responsive(font-size, 20px, 16px, 14px);   
+        }
+
+      }
+
+      .media {
+        @include flex(row);
+
+        .watch {
+          display              : flex;
+          margin               : 10px,5px, 0px, 20px;
+          background           : none;
+          cursor               : pointer;
+          padding              : 0px 10px;
+          background-color     : $color-white;
+          @include flex();
+          
+        }
+
+        button {
+          color             : $color-white;  
+          padding           : 16px 46px;
+          margin            : 20px, 20px, 0, 0;
+          background        : $color-black;
+          border-radius     : 4px;
+          cursor            : pointer;
+          font-size         : 20px;
+
+        }
+
+        
+      }
+    }
+
+    .right {
+      @include flex(column);
+      
+    }
+
+  }
 
 };
 
