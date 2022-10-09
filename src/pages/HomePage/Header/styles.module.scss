@@ -25,13 +25,21 @@
       }
     }
     button {
-      color             : #fff;     
+      color             : $color-white;  
       padding           : 16px 46px;
       margin-left       : auto;
-      background        : #000000;
+      background        : $color-black;
       border-radius     : 4px;
     }
   }
 
+  &.scrolled {
+    background-color: $color-white;
+    box-shadow   : -13.011px 13.0111px 104.089px rgba(0, 0, 0, 0.1);
+
+    .content {
+      @include responsive(padding, 20px 0, 20px 0);
+    }
+  }
 };
 

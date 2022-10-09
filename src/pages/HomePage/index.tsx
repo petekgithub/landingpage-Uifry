@@ -1,19 +1,20 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import styles from "./styles.module.scss";
+//import Intro from "./Intro";
 
 
 const HomePage: React.FC = () => {
   return (
     <div className={styles.container}>
       <Header/>
-    {/* <Intro />
-    // <Features />
+     {/* <Intro />
+     <Features />
     // <Advantages />
     // <Customize />
     // <Testimonial />
     // <Faq /> */}
-     <Footer /> 
+      <Footer /> 
 
     </div>
   )
