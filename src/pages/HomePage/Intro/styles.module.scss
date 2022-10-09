@@ -3,6 +3,7 @@
 
 .container {
 
+
   .content {
     @include flex(null, center);
     @include content();
@@ -31,7 +32,7 @@
         p {
           margin-left: auto;
           font-size            : 25px;
-          opacity              : 1.6;
+          opacity              : .5;
           @include responsive(padding-bottom, null, null, 20px);
           @include responsive(text-align, null, null, center);
           @include responsive(max-width, 480px, 368px, 100%);

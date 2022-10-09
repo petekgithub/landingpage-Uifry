@@ -2,62 +2,57 @@
 
 
 .container {
-  display             : flex;
 
+  .content {
 
-  .right {
-    display           : flex;
-    flex-direction    : column;
-    width             : 50%;
-    position          : relative;
-    font-size            : 15px;
+    @include flex(center);
+    @include responsive(flex-direction, null, null, column);
+    transition: all .2s;
+    @include content();
+    @include responsive(padding, 40px 0, 40px 0);
 
-  span {
-    color             : #e55000;
-  };
-  
-  p {
-    font-size         : 20px;
-    opacity           : .5;
-  };
+    .left {
+      display           : flex;
+      justify-content   : center;
+      align-items       : center;
+      width             : 50%;
+      position          : relative;
+      overflow: hidden;
+      @include responsive(width, 50%, 50%, 100%);
+      
+      .img {
+        margin-top   : -40px;
+        margin-bottom: -60px;
+        position     : relative;
+        @include responsive(margin-left, -80px, -80px, 0);
+      }
+    }
 
-  .inner {
-    display              : flex;
-    flex-direction       : row;
-    gap                  : 10px;
-    align-items          :center;
-  }
+    .right {
+      @include flex(null, null, column);
+      width             : 50%;
+      position          : relative;
+      font-size            : 15px;
+      @include responsive(width, 50%, 50%, 100%);
 
-  .image{
-    margin-right      : 10px;
-    display           : inline-block;
-  };
-  // aligned for the icons and title
-  .title{
-    display           : flex;
-    flex-direction    : row;
-    align-items       : center;
-  };
-  .left {
-    display           : flex;
-    justify-content   : center;
-    align-items       : center;
-    width             : 50%;
-    position          : relative;
+      .info {
+        margin-bottom: 20px;
+      }
     
-
-    .phone {
-    z-index           : 1 !important;
-    position          : absolute;
-   
+      p {
+        font-size         : 20px;
+        opacity           : .5;
+      };
+  
+      .inner {
+        @include flex(null, null, row);
+        gap                  : 10px;
+        align-items          :center;
+      }
     };
-
-  .title{
-    display           : flex;
-    flex-direction    : row;
-    align-items       : center;
   };
-};
-};
-
 }
+
+
+  
+

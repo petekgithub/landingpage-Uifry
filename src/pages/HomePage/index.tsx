@@ -2,6 +2,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import styles from "./styles.module.scss";
 import Intro from "./Intro";
+import Features from "./Features";
 
 
 const HomePage: React.FC = () => {
@@ -9,8 +10,8 @@ const HomePage: React.FC = () => {
     <div className={styles.container}>
       <Header/>
      <Intro />
-     {/* <Features />
-    // <Advantages />
+     <Features />
+    {/* <<Advantages />
     // <Customize />
     // <Testimonial />
     // <Faq /> */}

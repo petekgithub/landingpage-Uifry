@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 import Image from 'next/image';
-import Light from "Common/assets/imgs/introlight.svg";
+//import Light from "Common/assets/imgs/introlight.svg";
 import Video from "Common/assets/icons/introvideoicon.svg";
 import Logo from "Common/assets/imgs/intrologo.svg";
 import Phone from "Common/assets/imgs/introphone.svg";
