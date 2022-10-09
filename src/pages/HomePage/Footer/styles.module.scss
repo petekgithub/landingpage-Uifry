@@ -1,0 +1,61 @@
+//@import "../../Core/styles/mixins.scss";
+//@import "../../../Common/styles/mixins.scss";
+@import "Common/styles/index.scss";
+
+
+
+.container {
+  display                 : flex;
+  flex-direction          : column;
+  margin-top              : 100px;
+  align-items             : center;
+
+
+  .phone, .mail {
+    flex-direction        : column;
+    margin-top            : 20px;
+  };
+  // inside the ul and delete the little dots
+  .links ul,
+  .legal ul,
+  .product ul {
+    list-style-type        : none;
+    list-style-position    : inside;
+  };
+  .innerContainer{
+      width                : 90%;
+      justify-content      : space-between;
+      display              : flex;
+      flex-direction       : row;
+    };
+  .frame {
+    margin-top             : 10vh;
+    display                : flex;
+    flex-direction         : column;
+  };
+  .uptodate {
+    flex-direction         : row;
+  };
+  .innerContainer {
+    font-size              : 20px;
+  };
+  .btn {
+      flex-direction       : row;
+      display              : flex;
+      align-items          : center;
+      background-color     : black;
+    };
+  .newsletter{
+    .subscribeInput{
+      width                : 100px;
+      margin-right         : 5px;
+    };
+    .submitButton{
+      background-color     :#181818;
+      padding              : 5px 10px;
+      color                : #fff;
+      border-radius        : 5px;
+      cursor               : pointer;
+    };
+  };
+};

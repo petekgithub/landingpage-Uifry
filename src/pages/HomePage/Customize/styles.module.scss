@@ -1,0 +1,60 @@
+//@import "../../Core/styles/mixins.scss";
+//@import "../../../Common/styles/mixins.scss";
+@import "Common/styles/index.scss";
+
+
+
+
+@mixin container-base(){  
+  display            : flex;
+  align-items        : center;
+  margin-top         : 0px;
+
+  // @include for-phone-only {    
+  //   font-size: 1rem; 
+  // }
+  // @include for-tablet-portrait-up {    
+  //   font-size: 1rem; 
+  // }
+  // @include for-tablet-landscape-up {    
+  //   font-size: 1rem; 
+  // }
+  // @include for-desktop-up {    
+  //   font-size: 1rem; 
+  // }
+  // @include for-big-desktop-up {    
+  //   font-size: 1rem; 
+  // }
+
+  h4 {
+    font-size        : 1.4rem;
+  };
+  .title {
+    display          : flex;
+    flex-direction   : row;
+    align-items      : center;
+  };
+  .inner {
+    display              : flex;
+    flex-direction       : row;
+    gap                  : 10px;
+    align-items          :center;
+  }
+  p {
+    font-size        : 20px;
+    opacity          : 0.5;
+  };
+  .photo {
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+  };
+  .content{
+    width            : 50% !important ;
+  };
+};
+.container{
+  @include container-base();
+  flex-direction     : row;
+};
+

@@ -1,0 +1,81 @@
+//@import "../../Core/styles/mixins.scss";
+//@import "../../../Common/styles/mixins.scss";
+@import "Common/styles/index.scss";
+
+
+
+.container {
+  display             : flex;
+
+  // @include for-phone-only {    
+  //   font-size: 1rem; 
+  // }
+  // @include for-tablet-portrait-up {    
+  //   font-size: 1rem; 
+  // }
+  // @include for-tablet-landscape-up {    
+  //   font-size: 1rem; 
+  // }
+  // @include for-desktop-up {    
+  //   font-size: 1rem; 
+  // }
+  // @include for-big-desktop-up {    
+  //   font-size: 1rem; 
+  // }
+
+  .right {
+    display           : flex;
+    flex-direction    : column;
+    width             : 50%;
+    position          : relative;
+    font-size            : 15px;
+
+  span {
+    color             : #e55000;
+  };
+  
+  p {
+    font-size         : 20px;
+    opacity           : .5;
+  };
+
+  .inner {
+    display              : flex;
+    flex-direction       : row;
+    gap                  : 10px;
+    align-items          :center;
+  }
+
+  .image{
+    margin-right      : 10px;
+    display           : inline-block;
+  };
+  // aligned for the icons and title
+  .title{
+    display           : flex;
+    flex-direction    : row;
+    align-items       : center;
+  };
+  .left {
+    display           : flex;
+    justify-content   : center;
+    align-items       : center;
+    width             : 50%;
+    position          : relative;
+    
+
+    .phone {
+    z-index           : 1 !important;
+    position          : absolute;
+   
+    };
+
+  .title{
+    display           : flex;
+    flex-direction    : row;
+    align-items       : center;
+  };
+};
+};
+
+}

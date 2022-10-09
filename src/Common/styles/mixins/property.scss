@@ -1,0 +1,22 @@
+@mixin flex($alignItems: null, $justifyContent: null, $flexDirection: null) {
+  display        : flex;
+  align-items    : $alignItems;
+  justify-content: $justifyContent;
+  flex-direction : $flexDirection;
+}
+
+
+@mixin fixed($top: null, $right: null, $bottom: null, $left: null) {
+  top       : $top;
+  left      : $left;
+  right     : $right;
+  bottom    : $bottom;
+  position  : fixed;
+}
+
+
+@mixin content($width: $default-content-width) {
+  width       : $width;
+  margin      : auto;
+  max-width   : calc(100% - $mobile-padding);
+}

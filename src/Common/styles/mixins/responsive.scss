@@ -1,0 +1,41 @@
+@mixin phone {
+  @media screen and (max-width: 499px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 500px) and (max-width: 1030px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 1030px) {
+    @content;
+  }
+}
+
+@mixin responsive($prop, $web, $tablet: null, $phone: null) {
+  #{$prop}: $web;
+
+  @if $tablet !=null {
+    @if $phone !=null {
+      @include tablet {
+        #{$prop}: $tablet;
+      }
+    }
+
+    @else {
+      @include mobile {
+        #{$prop}: $tablet;
+      }
+    }
+  }
+
+  @if $phone !=null {
+    @include phone {
+      #{$prop}: $phone;
+    }
+  }
+}

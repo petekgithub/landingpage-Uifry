@@ -1,0 +1,12 @@
+@import "Common/styles/index.scss";
+
+.downloadbutton {
+  padding: 16px 46px;
+  background-color : $color-black;
+  color            : $color-white;
+  cursor           : pointer;
+  border-radius    : 5px;
+  text-align       : center;
+  font-size        : 1.2rem;
+  margin-left: auto;
+}

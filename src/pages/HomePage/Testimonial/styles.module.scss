@@ -1,0 +1,76 @@
+//@import "../../Core/styles/mixins.scss";
+//@import "../../../Common/styles/mixins.scss";
+@import "Common/styles/index.scss";
+
+
+
+.container {
+  display                : flex;
+  align-items            : center;
+  margin-top             : 0px;
+  //put the title part on top, and the innerContainer below that
+  flex-direction         : column ;
+  justify-items          : center;
+  // gap for title and img seperate them to each other
+  gap                    : 70px;
+
+  // @include for-phone-only {    
+  //   font-size: 1rem; 
+  // }
+  // @include for-tablet-portrait-up {    
+  //   font-size: 1rem; 
+  // }
+  // @include for-tablet-landscape-up {    
+  //   font-size: 1rem; 
+  // }
+  // @include for-desktop-up {    
+  //   font-size: 1rem; 
+  // }
+  // @include for-big-desktop-up {    
+  //   font-size: 1rem; 
+  // }
+  
+  .left {
+    width                : 50%;
+    position             : relative;
+    display              : flex;
+    justify-content      : center;
+    align-items          : center;
+  };
+  .innerContainer {
+    display              : flex;
+    align-items          : center;
+    margin-top           : -120px;
+  };
+  span {
+    color                : #D2001A;
+    font-size            : 25px;
+    opacity              : 0.6;
+  };
+  h1 {
+    font-size            : 1.7rem;
+    font-weight          : bolder;
+  };
+  h4 {
+    font-size            : 1.7rem;
+  };
+  .title {
+   width                 : 100%;
+   text-align            : center;
+  };
+  .image{
+    margin-right         : 10px;
+    display              : inline-block;
+  };
+  .right {
+    width                : 40%;
+  };
+  p {
+    font-size            : 20px;
+    opacity              : 0.5;
+  };
+  .heads {
+    display              : flex;
+    flex-direction       : column;
+  };
+};

@@ -1,0 +1,52 @@
+// all the 6 divs inside one div, just use the nth-child(odd) or nth-child(even)
+//@import "../../Core/styles/mixins.scss";
+//@import "../../../Common/styles/mixins.scss";
+@import "Common/styles/index.scss";
+
+
+
+.content {
+  display                :flex;
+  font-size              : 1.3rem;
+
+  // @include for-phone-only {    
+  //   font-size: 1rem; 
+  // }
+  // @include for-tablet-portrait-up {    
+  //   font-size: 1rem; 
+  // }
+  // @include for-tablet-landscape-up {    
+  //   font-size: 1rem; 
+  // }
+  // @include for-desktop-up {    
+  //   font-size: 1rem; 
+  // }
+  // @include for-big-desktop-up {    
+  //   font-size: 1rem; 
+  // }
+
+  // seperating each other
+  .left > div,
+  .right > div {
+    padding              : 5px 15px ;
+    border-radius        : 10px;
+    margin               : 10px;
+  };
+  .left > div:nth-child(even) > p{
+    opacity              : 0.5;
+  };
+  .left > div:nth-child(odd) > p{
+    opacity              : 0.5;
+  };
+  .left > div:nth-child(odd){
+    background-color     : #FF5555;
+    color                : #fff;
+  };
+ .right > div:nth-child(even){
+    background-color     : #FF5555;
+    color                : #fff;
+  };
+  h1 {
+    font-size            : 2rem;
+  };
+};
