@@ -3,20 +3,20 @@ import Footer from "./Footer";
 import styles from "./styles.module.scss";
 import Intro from "./Intro";
 import Features from "./Features";
+import Advantages from "./Advantages";
 
 
 const HomePage: React.FC = () => {
   return (
     <div className={styles.container}>
-      <Header/>
+     <Header/>
      <Intro />
      <Features />
-    {/* <<Advantages />
-    // <Customize />
+     <Advantages />
+    {/*  <Customize />
     // <Testimonial />
     // <Faq /> */}
-      <Footer /> 
-
+     <Footer /> 
     </div>
   )
 };
