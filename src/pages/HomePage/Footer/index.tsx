@@ -1,65 +1,61 @@
 import styles from "./styles.module.scss";
 import Image from 'next/image';
-import Logo from "../../../Common/assets/imgs/headerlogo.svg";
-import Mail from "../../../Common/assets/imgs/mail.svg";
-import Phone from "../../../Common/assets/imgs/phone.svg";
+import Logo from "Common/assets/imgs/headerlogo.svg";
+import Mail from "Common/assets/imgs/mail.svg";
+import Phone from "Common/assets/imgs/phone.svg";
 
 
-const Footer = () =>  {
+const Footer: React.FC = () =>  {
   return (
-    <section id="Footer" className={styles.container}>
-      <footer className={styles.innerContainer}>
-        <div className={styles.contact}>
-          <Image src={Logo} alt="FooterLogo" />
-          <div className={styles.mail}>
-            <Image src={Mail} alt="MailLogo" />
-            <a href="mailto:help@frybix.com">
-              Help@Frybix.com
-            </a>
-          </div>
-          <div className={styles.phone}>
-            <Image src={Phone} alt="PhoneLogo" />
-            <a href="+1 234 456 678 89">
-              +1234 456 678 89
-            </a>
-          </div>
-        </div> 
-        <div className={styles.links}>
-          <ul>
-            <h3>Links</h3>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Bookings</li>
-            <li>Blogs</li>
-          </ul>
-        </div>
-        <div className={styles.legal}>
-          <ul>
-            <h3>Legal</h3>
-            <li>Terms Of Use</li>
-            <li>Privacy Policy</li>
-            <li>Cookie Policy</li>
-          </ul>
-        </div>
-        <div className={styles.product}>
-          <ul>
-            <h1>Product</h1>
-            <li>Take Tour</li>
-            <li>Live Chat</li>
-            <li>Reviews</li>
-          </ul>
-        </div>
-        <div className={styles.newsletter}>
-          <h1>Newsletter</h1>
-          <h4>Stay Up To Date</h4>
-          <input type="email" name="email" className={styles.subscribeInput} placeholder="Your email"/>
-          <button type="submit" className={styles.submitButton}>Subscribe</button>
+      <footer className={styles.container}>
+        <div className={styles.content}>
+          <div className={styles.innerContent}> 
+            <div className={styles.col}> 
+              <Image src={Logo} alt="FooterLogo" width={117} height={35}/>
+              <div className={styles.mail}>
+                <Image src={Mail} alt="MailLogo" />
+                <a href="mailto:help@frybix.com">
+                  Help@Frybix.com
+                </a>
+              </div>
+              <div className={styles.phone}>
+                <Image src={Phone} alt="PhoneLogo" />
+                <a href="+1 234 456 678 89">
+                  +1234 456 678 89
+                </a>
+              </div>
+            </div>   
+            <div className={styles.col}>
+                <h4>Links</h4>
+                <a>Home</a>
+                <a>About Us</a>
+                <a>Bookings</a>
+                <a>Blogs</a>
+            </div>
+            <div className={styles.col}>
+                <h4>Legal</h4>
+                <a>Terms of Use</a>
+                <a>Privacy Policy</a>
+                <a>Cookie Policy</a>
+            </div>
+            <div className={styles.col}>
+                <h4>Product</h4>
+                <a>Take Tour</a>
+                <a>Live Chat</a>
+                <a>Reviews</a>
+            </div>
+            <div className={styles.col}>
+              <h4>Newsletter</h4>
+              <h5>Stay Up To Date</h5>
+              <div className={styles.inputContainer}>
+                <input placeholder="Your Email" />
+                <button>Subscribe</button>
+              </div>
+            </div> 
+            </div>
+            <div className={styles.copyright}>Copyright 2022 Uifry.Com All Rights Reserved</div>
         </div> 
     </footer>
-    <div className={styles.frame}>
-      <p>Copyright 2022 Uifry.Com All Rights Reserved </p>
-    </div>
-    </section>
   );
 };
 

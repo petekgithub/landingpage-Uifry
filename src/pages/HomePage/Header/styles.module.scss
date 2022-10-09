@@ -10,7 +10,6 @@
     transition: all .2s;
     @include flex(center);
     @include content();
-    margin: 0 72px;
     @include responsive(padding, 40px 0, 40px 0);
 
     nav {

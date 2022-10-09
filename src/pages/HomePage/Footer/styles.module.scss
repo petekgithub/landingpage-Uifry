@@ -1,61 +1,70 @@
-//@import "../../Core/styles/mixins.scss";
-//@import "../../../Common/styles/mixins.scss";
 @import "Common/styles/index.scss";
 
 
-
 .container {
-  display                 : flex;
-  flex-direction          : column;
-  margin-top              : 100px;
-  align-items             : center;
 
+  .content {
+    @include content();
+    @include responsive(padding, 40px 0, 20px 0);
 
-  .phone, .mail {
-    flex-direction        : column;
-    margin-top            : 20px;
-  };
-  // inside the ul and delete the little dots
-  .links ul,
-  .legal ul,
-  .product ul {
-    list-style-type        : none;
-    list-style-position    : inside;
-  };
-  .innerContainer{
-      width                : 90%;
-      justify-content      : space-between;
-      display              : flex;
-      flex-direction       : row;
-    };
-  .frame {
-    margin-top             : 10vh;
-    display                : flex;
-    flex-direction         : column;
-  };
-  .uptodate {
-    flex-direction         : row;
-  };
-  .innerContainer {
-    font-size              : 20px;
-  };
-  .btn {
-      flex-direction       : row;
-      display              : flex;
-      align-items          : center;
-      background-color     : black;
-    };
-  .newsletter{
-    .subscribeInput{
-      width                : 100px;
-      margin-right         : 5px;
-    };
-    .submitButton{
-      background-color     :#181818;
-      padding              : 5px 10px;
-      color                : #fff;
-      border-radius        : 5px;
-      cursor               : pointer;
-    };
-  };
+    .innerContent {
+      @include flex(null, space-between);
+      @include responsive(padding, 40px 0, 20px 0);
+      @include responsive(flex-direction, null, column);
+
+      .col {
+        @include responsive(margin-bottom, null, 40px);
+        @include flex(null, null, column);
+
+        a {
+          margin-top: 16px;
+        }
+
+        .phone,
+        .mail {
+          margin-top: 16px;
+        }
+
+        h4 {
+          font-size    : 32px;
+        }
+
+        h5 {
+          margin-top   : 16px;
+          font-weight  : normal;
+        }
+
+        .inputContainer {
+          margin-top: 16px;
+          padding: 10px;
+          border-radius: 4px;
+          background   : #ffff;
+          box-shadow   : -13.011px 13.0111px 104.089px rgba(0, 0, 0, 0.1);
+
+        }
+
+        input{
+          font-weight : 500;
+          font-size   : 16px;
+          border      : none;
+          outline     : none;
+        }
+        
+        button {
+          color             : #fff;     
+          padding           : 16px 46px;
+          margin-left       : auto;
+          background        : #000000;
+          border-radius     : 4px;
+        }
+      }
+    }
+  
+    .copyright {
+      border-top  : 1px solid;
+      text-align  : center;
+      padding     : 40px 0;
+      @include responsive(padding, 40px 0, 20px 0);
+    }
+  }
 };

@@ -1,6 +1,7 @@
 import Header from "./Header";
+import Footer from "./Footer";
 import styles from "./styles.module.scss";
-//import Footer from "./Footer";
+
 
 const HomePage: React.FC = () => {
   return (
@@ -11,8 +12,8 @@ const HomePage: React.FC = () => {
     // <Advantages />
     // <Customize />
     // <Testimonial />
-    // <Faq /> 
-     <Footer /> */}
+    // <Faq /> */}
+     <Footer /> 
 
     </div>
   )
