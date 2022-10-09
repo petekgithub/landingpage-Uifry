@@ -1,27 +1,9 @@
-//@import "../../Core/styles/mixins.scss";
-//@import "../../../Common/styles/mixins.scss";
 @import "Common/styles/index.scss";
-
 
 
 .container {
   display             : flex;
 
-  // @include for-phone-only {    
-  //   font-size: 1rem; 
-  // }
-  // @include for-tablet-portrait-up {    
-  //   font-size: 1rem; 
-  // }
-  // @include for-tablet-landscape-up {    
-  //   font-size: 1rem; 
-  // }
-  // @include for-desktop-up {    
-  //   font-size: 1rem; 
-  // }
-  // @include for-big-desktop-up {    
-  //   font-size: 1rem; 
-  // }
 
   .right {
     display           : flex;

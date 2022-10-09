@@ -1,5 +1,3 @@
-//@import "../../Core/styles/mixins.scss";
-//@import "../../../Common/styles/mixins.scss";
 @import "Common/styles/index.scss";
 
 
@@ -14,21 +12,6 @@
   // gap for title and img seperate them to each other
   gap                    : 70px;
 
-  // @include for-phone-only {    
-  //   font-size: 1rem; 
-  // }
-  // @include for-tablet-portrait-up {    
-  //   font-size: 1rem; 
-  // }
-  // @include for-tablet-landscape-up {    
-  //   font-size: 1rem; 
-  // }
-  // @include for-desktop-up {    
-  //   font-size: 1rem; 
-  // }
-  // @include for-big-desktop-up {    
-  //   font-size: 1rem; 
-  // }
   
   .left {
     width                : 50%;

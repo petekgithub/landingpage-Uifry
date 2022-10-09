@@ -1,4 +1,4 @@
-//@import "../../../Common/styles/mixins.scss";
+
 @import "Common/styles/index.scss";
 
 
@@ -9,21 +9,6 @@
   flex-direction      : row-reverse;
   align-items         : center;
 
-  // @include for-phone-only {    
-  //   font-size: 1rem; 
-  // }
-  // @include for-tablet-portrait-up {    
-  //   font-size: 1rem; 
-  // }
-  // @include for-tablet-landscape-up {    
-  //   font-size: 1rem; 
-  // }
-  // @include for-desktop-up {    
-  //   font-size: 1rem; 
-  // }
-  // @include for-big-desktop-up {    
-  //   font-size: 1rem; 
-  // }
 
   .left {
     width              : 50%;
