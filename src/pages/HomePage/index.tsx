@@ -4,6 +4,7 @@ import styles from "./styles.module.scss";
 import Intro from "./Intro";
 import Features from "./Features";
 import Advantages from "./Advantages";
+import Customize from "./Customize";
 
 
 const HomePage: React.FC = () => {
@@ -13,8 +14,8 @@ const HomePage: React.FC = () => {
      <Intro />
      <Features />
      <Advantages />
-    {/*  <Customize />
-    // <Testimonial />
+     <Customize />
+    {/*<Testimonial />
     // <Faq /> */}
      <Footer /> 
     </div>

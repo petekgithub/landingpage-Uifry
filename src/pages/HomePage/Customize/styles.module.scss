@@ -1,43 +1,55 @@
-
 @import "Common/styles/index.scss";
 
+.container {
+  @include flex(center, null, row-reverse);
 
-@mixin container-base(){  
-  display            : flex;
-  align-items        : center;
-  margin-top         : 0px;
+  .content {
+    @include flex(center);
+    @include responsive(flex-direction, null, null, column);
+    transition: all .2s;
+    @include content();
+    @include responsive(padding, 40px 0, 40px 0);
 
+    .left {
+      display           : flex;
+      justify-content   : center;
+      align-items       : center;
+      width             : 50%;
+      position          : relative;
+      overflow: hidden;
+      @include responsive(width, 50%, 50%, 100%);
+      
+      .img {
+        margin-top   : -40px;
+        margin-bottom: -60px;
+        position     : relative;
+        @include responsive(margin-left, -80px, -80px, 0);
+      }
+    }
 
+    .right {
+      @include flex(null, null, column);
+      width             : 50%;
+      position          : relative;
+      font-size            : 15px;
+      @include responsive(width, 50%, 50%, 100%);
 
-  h4 {
-    font-size        : 1.4rem;
-  };
-  .title {
-    display          : flex;
-    flex-direction   : row;
-    align-items      : center;
-  };
-  .inner {
-    display              : flex;
-    flex-direction       : row;
-    gap                  : 10px;
-    align-items          :center;
-  }
-  p {
-    font-size        : 20px;
-    opacity          : 0.5;
-  };
-  .photo {
-    display          : flex;
-    justify-content  : center;
-    align-items      : center;
-  };
-  .content{
-    width            : 50% !important ;
-  };
-};
-.container{
-  @include container-base();
-  flex-direction     : row;
-};
+      .inner {
+        display              : flex;
+        flex-direction       : row;
+        gap                  : 10px;
+        align-items          :center;
+      }
 
+      h1 {
+        font-size        : 1.4rem;
+      }
+
+      p {
+        font-size        : 20px;
+        opacity          : 0.5;
+      }
+      
+    };
+  };
+}
