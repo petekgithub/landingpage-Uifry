@@ -38,7 +38,6 @@
           @include responsive(max-width, 480px, 368px, 100%);
           @include responsive(font-size, 20px, 16px, 14px);   
         }
-
       }
 
       .media {
@@ -52,30 +51,23 @@
           padding              : 0px 10px;
           background-color     : $color-white;
           @include flex();
-          
         }
 
         button {
           color             : $color-white;  
           padding           : 16px 46px;
-          margin            : 20px, 20px, 0, 0;
+          margin            : 20px 20px 0 0;
           background        : $color-black;
           border-radius     : 4px;
           cursor            : pointer;
           font-size         : 20px;
-
         }
-
-        
       }
     }
 
     .right {
       @include flex(column);
-      
     }
-
   }
-
 };
 

@@ -5,6 +5,7 @@ import Intro from "./Intro";
 import Features from "./Features";
 import Advantages from "./Advantages";
 import Customize from "./Customize";
+import Testimonial from "./Testimonial";
 
 
 const HomePage: React.FC = () => {
@@ -15,8 +16,8 @@ const HomePage: React.FC = () => {
      <Features />
      <Advantages />
      <Customize />
-    {/*<Testimonial />
-    // <Faq /> */}
+     <Testimonial />
+     {/*<Faq /> */}
      <Footer /> 
     </div>
   )

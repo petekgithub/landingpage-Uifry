@@ -35,10 +35,8 @@
       @include responsive(width, 50%, 50%, 100%);
 
       .inner {
-        display              : flex;
-        flex-direction       : row;
+        @include flex(center, null, row);
         gap                  : 10px;
-        align-items          :center;
       }
 
       h1 {
