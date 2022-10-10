@@ -12,7 +12,6 @@ const Testimonial:React.FC = () =>  {
               <h1>TESTIMONIAL</h1>
               <h3>What our Users Say About Us?</h3>
             </div>
-            
             <div className={styles.partTwo}> 
               <div className={styles.left}>
                 <Image src={Testimoniaal} alt="Testimonial" width="735" height="725"/>

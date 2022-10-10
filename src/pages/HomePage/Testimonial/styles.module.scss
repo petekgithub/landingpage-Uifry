@@ -17,7 +17,7 @@
         width                 : 100%;
         text-align            : center;
         @include flex(null, null, column);
-        padding: 72px 0 88px 0;
+        gap: 1em;
       
         h1 {
           color                : $color-black;

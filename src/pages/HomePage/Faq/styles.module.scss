@@ -5,14 +5,26 @@
   @include flex(center, null, column);
 
   .content {
-    @include flex(center);
+    @include flex(null, null, row);
+    
     transition: all .2s;
     @include content();
     @include responsive(padding, 40px 0, 40px 0);
     @include responsive(flex-direction, null, null, column);
     font-size              : 1.3rem;
   
-    // seperating each other
+    .title {
+      @include flex(null, null, row);
+      h1 {
+        font-size            : 2rem;
+      };
+
+    }
+
+    .innerContent {
+    @include flex(null, null, row);
+
+      // seperating each other
     .left > div,
     .right > div {
       padding              : 5px 15px;
@@ -34,8 +46,6 @@
       background-color     : #FF5555;
       color                : #fff;
     };
-    h1 {
-      font-size            : 2rem;
-    };
+    }
   };
 };
