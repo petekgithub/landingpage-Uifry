@@ -4,11 +4,12 @@ import styles from "./styles.module.scss";
 const Faq = () =>  {
   return (
     <section id="Faq" className={styles.container}>
+      <div className={styles.content}>
       <div className={styles.title}>
         <span>FAQ</span>
         <h1>Frequently Asked Questions</h1>
       </div>
-      <div className={styles.content}>
+      <div className={styles.innerContent}>
         <div className={styles.left}>
           <div className='leftOne'>
             <h3>The best financial accounting app ever!</h3>
@@ -37,6 +38,7 @@ const Faq = () =>  {
             <p>“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.</p>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

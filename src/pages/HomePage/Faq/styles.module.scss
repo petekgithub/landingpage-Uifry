@@ -1,34 +1,41 @@
-
 @import "Common/styles/index.scss";
 
+.container {
 
+  @include flex(center, null, column);
 
-.content {
-  display                :flex;
-  font-size              : 1.3rem;
-
-  // seperating each other
-  .left > div,
-  .right > div {
-    padding              : 5px 15px ;
-    border-radius        : 10px;
-    margin               : 10px;
-  };
-  .left > div:nth-child(even) > p{
-    opacity              : 0.5;
-  };
-  .left > div:nth-child(odd) > p{
-    opacity              : 0.5;
-  };
-  .left > div:nth-child(odd){
-    background-color     : #FF5555;
-    color                : #fff;
-  };
- .right > div:nth-child(even){
-    background-color     : #FF5555;
-    color                : #fff;
-  };
-  h1 {
-    font-size            : 2rem;
+  .content {
+    @include flex(center);
+    transition: all .2s;
+    @include content();
+    @include responsive(padding, 40px 0, 40px 0);
+    @include responsive(flex-direction, null, null, column);
+    font-size              : 1.3rem;
+  
+    // seperating each other
+    .left > div,
+    .right > div {
+      padding              : 5px 15px;
+      border-radius        : 10px;
+      margin               : 10px;
+      
+    };
+    .left > div:nth-child(even) > p{
+      opacity              : 0.5;
+    };
+    .left > div:nth-child(odd) > p{
+      opacity              : 0.5;
+    };
+    .left > div:nth-child(odd){
+      background-color     : #FF5555;
+      color                : #fff;
+    };
+   .right > div:nth-child(even){
+      background-color     : #FF5555;
+      color                : #fff;
+    };
+    h1 {
+      font-size            : 2rem;
+    };
   };
 };

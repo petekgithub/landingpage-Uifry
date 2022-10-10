@@ -20,7 +20,7 @@ const Intro:React.FC = () => {
           <div className={styles.media}> 
             <button>GetStarted</button>
             <div className={styles.watch}>
-              <Image className={styles.video} src={Video} alt="IntroVideoWatch"/>
+              <Image src={Video} alt="IntroVideoWatch" width="29" height="29"/>
               <button>
                 <Link href="https://www.youtube.com/watch?v=OS8taasZl8k&list=RDOS8taasZl8k&start_radio=1">
                   <a target="_blank">Watch Video</a>

@@ -2,17 +2,17 @@
 
 
 .container {
-  margin-top             : 0px;
-  gap                    : 70px;
+  margin                 : 0 0 0 400px;
+  gap                    : 40px;
   @include flex(center, center, column);
+  width: $default-content-width;
   
     .content {
       @include flex(center);
       @include responsive(flex-direction, null, null, column);
       transition: all .2s;
-      @include content();
       @include responsive(padding, 40px 0, 40px 0);
-
+      
       .partOne {
         width                 : 100%;
         text-align            : center;
@@ -20,9 +20,8 @@
         padding: 72px 0 88px 0;
       
         h1 {
-          color                : $color-red;
-          font-size            : 1.7rem;
-          font-weight          : bolder;
+          color                : $color-black;
+          font-size            : .9rem;
         }
       
         h3 {
@@ -66,6 +65,7 @@
 
           .heads {
            @include flex(flex-start, null, column);
+           align-items: flex-start 
           
           }
         }

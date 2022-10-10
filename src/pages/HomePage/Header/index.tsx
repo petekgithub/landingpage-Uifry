@@ -2,6 +2,7 @@ import styles from "./styles.module.scss";
 import Image from 'next/image';
 import { useEffect, useState } from "react";
 import Logo from "Common/assets/imgs/headerlogo.svg";
+import NavMenu from "components/NavBar";
 
 
 const Header: React.FC = () => {
@@ -25,21 +26,17 @@ const Header: React.FC = () => {
     <header className={`${styles.container} ${scrolled ? styles.scrolled : ""}`}>
       <div className= {styles.content}>
         <div className={styles.logo}>
-        <Image 
-          src={Logo}
-          width={117}
-          height={35}
-        />
+          <Image src={Logo} width={117} height={35} />
         </div>
-        {/* <div>
-          <NavBar />
-        </div> */}
-        <nav>
+        <div>
+          <NavMenu />
+        </div> 
+        {/* <nav>
           <span>Home</span>
           <span>Features</span>
           <span>Advantages</span>
           <span>Testimonial</span>
-        </nav>
+        </nav> */}
         {/* <div className= {styles.button}>
           <DownloadButton />
         </div> */}
