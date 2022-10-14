@@ -8,7 +8,7 @@
   width: $default-content-width;
   
     .content {
-      @include flex(center);
+      @include flex(center, null, column);
       @include responsive(flex-direction, null, null, column);
       transition: all .2s;
       @include responsive(padding, 40px 0, 40px 0);
