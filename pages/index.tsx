@@ -1,6 +1,6 @@
-import MetaHeader from "Common/MetaHeader";
 import type { NextPage } from "next";
-import HomePage from "pages/HomePage";
+import MetaHeader from "src/Common/MetaHeader";
+import HomePage from "src/pages/HomePage";
 
 const Home: NextPage = () => {
   return (
