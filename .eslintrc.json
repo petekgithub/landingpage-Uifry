@@ -1,6 +1,7 @@
 {
-  "extends": "next/core-web-vitals",
-  "no-console": [
-    "error"
-  ]
+  "extends": ["eslint:recommended", "plugin:next/core-web-vitals"],
+  "no-console": ["error"],
+  "rules": {
+    "react/no-set-state": "off"
+  }
 }
