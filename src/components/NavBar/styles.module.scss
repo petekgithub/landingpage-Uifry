@@ -1,11 +1,12 @@
 @import "Common/styles/index.scss";
 
 .container {
- margin-right: 100px;
- @include responsive(padding, 10px 0, 10px 0);
- @include flex(center, space-between);
+  margin-right: 100px;
+  @include responsive(padding, 10px 0, 10px 0);
+  @include flex(center, space-between);
+  cursor: pointer;
 
- &:last-child {
-  margin-right: 10;
- }
+  &:last-child {
+    margin-right: 10;
+  }
 }
