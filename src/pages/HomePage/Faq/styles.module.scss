@@ -1,51 +1,58 @@
 @import "Common/styles/index.scss";
 
 .container {
-
-  @include flex(center, null, column);
+  margin: 0 0 0 400px;
+  gap: 40px;
+  @include flex(center, center, column);
+  width: $default-content-width;
 
   .content {
-    @include flex(null, null, row);
-    
-    transition: all .2s;
-    @include content();
-    @include responsive(padding, 40px 0, 40px 0);
+    @include flex(center, null, column);
     @include responsive(flex-direction, null, null, column);
-    font-size              : 1.3rem;
-  
-    .title {
-      @include flex(null, null, row);
-      h1 {
-        font-size            : 2rem;
-      };
+    transition: all 0.2s;
+    @include responsive(padding, 40px 0, 40px 0);
 
+    /**/
+    .partOne {
+      width: 100%;
+      text-align: center;
+      @include flex(null, null, column);
+      gap: 1em;
+
+      h1 {
+        color: $color-black;
+        font-size: 0.9rem;
+      }
+
+      h3 {
+        font-size: 1.7rem;
+      }
     }
 
     .innerContent {
-    @include flex(null, null, row);
+      @include flex(null, null, row);
 
       // seperating each other
-    .left > div,
-    .right > div {
-      padding              : 5px 15px;
-      border-radius        : 10px;
-      margin               : 10px;
-      
-    };
-    .left > div:nth-child(even) > p{
-      opacity              : 0.5;
-    };
-    .left > div:nth-child(odd) > p{
-      opacity              : 0.5;
-    };
-    .left > div:nth-child(odd){
-      background-color     : #FF5555;
-      color                : #fff;
-    };
-   .right > div:nth-child(even){
-      background-color     : #FF5555;
-      color                : #fff;
-    };
+      .left > div,
+      .right > div {
+        padding: 5px 15px;
+        border-radius: 10px;
+        margin: 10px;
+      }
+      .left > div:nth-child(even) > p {
+        opacity: 0.5;
+      }
+      .left > div:nth-child(odd) > p {
+        opacity: 0.5;
+      }
+      .left > div:nth-child(odd) {
+        background-color: #ff5555;
+        color: #fff;
+      }
+      .right > div:nth-child(even) {
+        background-color: #ff5555;
+        color: #fff;
+      }
     }
-  };
-};
+  }
+}
